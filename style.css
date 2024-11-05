@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background: rgb(2, 0, 36);
+    box-sizing: content-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(2, 0, 36);
+  }
+  
+  .clock-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 45vw;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 20px 20px 15px rgb(0, 0, 255), -20px 20px 15px rgb(128, 20, 128), -20px -20px 15px rgb(255, 0, 0), 20px -20px 15px rgb(128, 0, 128);
+    /*20px 20px 15px rgba(0, 0, 255, 0.6), /* Blue */
+    /*-20px 20px 15px rgba(128, 20, 128, 0.5), /* Purple */
+    /*-20px -20px 15px rgba(255, 0, 0, 0.4), /* Red */
+    /*20px -20px 15px rgba(128, 0, 128, 0.3), /* Magenta */
+    /*5px 5px 5px rgba(0, 0, 0, 0.8), /* Dark Grey */
+    /*-5px -5px 5px rgba(0, 0, 0, 0.7); /* Dark Grey */ 
+    
+  }
+  
+  .clock-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .colon {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .date-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 60vh;
+    left: 67vw;
+    width: auto;
+    height: auto;
+    font-size: 1.1rem;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .clock-container {
+      width: 80vw;
+    }
+  
+    .date-container {
+      width: 50vw;
+    }
+  }
